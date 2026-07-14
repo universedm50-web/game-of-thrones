@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Khám phá biên niên sử các nhân vật vĩ đại, tầm ảnh hưởng của các đại gia tộc và các loài rồng huyền thoại trong Game of Thrones & House of the Dragon.">
+    <title>Chronicles of Westeros - Game of Thrones Wiki</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700;900&family=Cinzel+Decorative:wght@400;700;900&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Background Particles Canvas -->
+    <canvas id="particles-canvas"></canvas>
+
+    <!-- Navigation Bar -->
+    <header class="navbar-container" id="navbar">
+        <div class="navbar-content">
+            <a href="#home" class="logo page-nav-link">
+                <span class="logo-gold">WESTEROS</span>
+                <span class="logo-sub">Chronicles</span>
+            </a>
+            <nav class="nav-menu">
+                <a href="#home" class="nav-link page-nav-link active">Trang Chủ</a>
+                <a href="#characters" class="nav-link page-nav-link">Nhân Vật</a>
+                <a href="#houses" class="nav-link page-nav-link">Gia Tộc</a>
+                <a href="#dragons" class="nav-link page-nav-link">Các Loài Rồng</a>
+                <a href="#lessons" class="nav-link page-nav-link">Bài Học Cuộc Đời</a>
+            </nav>
+            <div class="audio-control-btn" id="audio-toggle" title="Bật/Tắt Nhạc Opening GoT">
+                <i class="fa-solid fa-volume-xmark" id="audio-icon"></i>
+                <span class="audio-label" id="audio-label">Nhạc</span>
+            </div>
+            <div class="mobile-menu-btn" id="mobile-menu-toggle">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Navigation Drawer -->
+    <div class="mobile-nav" id="mobile-nav">
+        <a href="#home" class="mobile-link page-nav-link">Trang Chủ</a>
+        <a href="#characters" class="mobile-link page-nav-link">Nhân Vật</a>
+        <a href="#houses" class="mobile-link page-nav-link">Gia Tộc</a>
+        <a href="#dragons" class="mobile-link page-nav-link">Các Loài Rồng</a>
+        <a href="#lessons" class="mobile-link page-nav-link">Bài Học Cuộc Đời</a>
+    </div>
+
+    <!-- MAIN PAGE CONTAINER -->
+    <main class="pages-wrapper">
+
+        <!-- ================================================================
+             PAGE 1: HOME — CINEMATIC EPIC HERO
+             ================================================================ -->
+        <section id="home" class="page-section active">
+
+            <!-- FULL-SCREEN CINEMATIC HERO -->
+            <div class="hero-section" id="hero">
+                <div class="hero-bg-image"></div>
+                <div class="hero-vignette"></div>
+                <div class="hero-scan-lines"></div>
+
+                <!-- Floating rune particles (CSS animated) -->
+                <div class="hero-runes" aria-hidden="true">
+                    <span class="rune">⚔</span><span class="rune">🐺</span>
+                    <span class="rune">🦁</span><span class="rune">🐉</span>
+                    <span class="rune">👑</span><span class="rune">❄</span>
+                    <span class="rune">🔥</span><span class="rune">⚔</span>
+                </div>
+
+                <!-- Main Hero Content -->
+                <div class="hero-content">
+                    <div class="hero-badge" data-aos="fade-down">
+                        <span class="badge-line"></span>
+                        <span class="badge-text">TRÒ CHƠI VƯƠNG QUYỀN</span>
+                        <span class="badge-line"></span>
+                    </div>
+
+                    <h1 class="hero-title">
+                        <span class="title-ice">CHRONICLES</span>
+                        <span class="title-of">OF</span>
+                        <span class="title-fire">WESTEROS</span>
+                    </h1>
+
+                    <div class="hero-tagline">
+                        <span class="tagline-line"></span>
+                        <p class="tagline-text">Bản Hùng Ca Của Băng &amp; Lửa</p>
+                        <span class="tagline-line"></span>
+                    </div>
+
+                    <p class="hero-desc">
+                        Khi bạn tham gia vào Trò Chơi Vương Quyền,<br>
+                        bạn chỉ có thể <em>thắng</em> hoặc <em>chết</em>.<br>
+                        Không có mảnh đất trung dung nào cả.
+                    </p>
+
+                    <div class="hero-stats-row">
+                        <div class="hero-stat">
+                            <span class="stat-num" data-target="17">0</span>
+                            <span class="stat-label">Nhân Vật</span>
+                        </div>
+                        <div class="hero-stat-divider">|</div>
+                        <div class="hero-stat">
+                            <span class="stat-num" data-target="4">0</span>
+                            <span class="stat-label">Gia Tộc</span>
+                        </div>
+                        <div class="hero-stat-divider">|</div>
+                        <div class="hero-stat">
+                            <span class="stat-num" data-target="8">0</span>
+                            <span class="stat-label">Loài Rồng</span>
+                        </div>
+                        <div class="hero-stat-divider">|</div>
+                        <div class="hero-stat">
+                            <span class="stat-num" data-target="8">0</span>
+                            <span class="stat-label">Mùa Phim</span>
+                        </div>
+                    </div>
+
+                    <div class="hero-actions">
+                        <a href="#characters" class="btn btn-primary page-nav-link">
+                            <i class="fa-solid fa-crown"></i>
+                            Khám Phá Nhân Vật
+                        </a>
+                        <a href="#dragons" class="btn btn-secondary page-nav-link">
+                            <i class="fa-solid fa-fire"></i>
+                            Các Loài Rồng
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Quote ticker at bottom -->
+                <div class="quote-ticker-wrap">
+                    <div class="quote-ticker" id="quote-slider">
+                        <!-- JS injected -->
+                    </div>
+                </div>
+
+                <!-- Scroll cue -->
+                <div class="scroll-cue">
+                    <div class="scroll-cue-line"></div>
+                    <span class="scroll-cue-text">KHÁM PHÁ</span>
+                </div>
+            </div>
+
+            <!-- HIGHLIGHT FEATURE CARDS — below hero -->
+            <div class="home-features">
+                <div class="feature-card reveal-card" style="--delay:0s">
+                    <div class="feat-icon-wrap">
+                        <i class="fa-solid fa-users feat-icon"></i>
+                    </div>
+                    <h3 class="feat-title">17 Nhân Vật Cốt Lõi</h3>
+                    <p class="feat-desc">Từ Stark đến Lannister, từ Targaryen đến Baratheon — tiểu sử, hành trình và cột mốc định mệnh đầy đủ của từng nhân vật.</p>
+                    <a href="#characters" class="feat-link page-nav-link">Xem ngay <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+
+                <div class="feature-card reveal-card" style="--delay:0.15s">
+                    <div class="feat-icon-wrap">
+                        <i class="fa-solid fa-shield feat-icon"></i>
+                    </div>
+                    <h3 class="feat-title">4 Đại Gia Tộc</h3>
+                    <p class="feat-desc">Stark, Lannister, Targaryen, Baratheon — gia huy, châm ngôn, lịch sử tranh quyền lực và những chiến tích mang tính thời đại.</p>
+                    <a href="#houses" class="feat-link page-nav-link">Xem ngay <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+
+                <div class="feature-card reveal-card" style="--delay:0.3s">
+                    <div class="feat-icon-wrap">
+                        <i class="fa-solid fa-dragon feat-icon"></i>
+                    </div>
+                    <h3 class="feat-title">8 Loài Rồng Huyền Thoại</h3>
+                    <p class="feat-desc">Balerion, Vhagar, Drogon, Caraxes và nhiều hơn nữa — sức mạnh, người cưỡi, kích thước và chiến tích kinh thiên động địa.</p>
+                    <a href="#dragons" class="feat-link page-nav-link">Xem ngay <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+
+                <div class="feature-card reveal-card" style="--delay:0.45s">
+                    <div class="feat-icon-wrap">
+                        <i class="fa-solid fa-scroll feat-icon"></i>
+                    </div>
+                    <h3 class="feat-title">Bài Học Cuộc Đời</h3>
+                    <p class="feat-desc">Mỗi nhân vật là một tấm gương phản chiếu triết học — về danh dự, trí tuệ, quyền lực và sự kiên cường giữa nghịch cảnh.</p>
+                    <a href="#lessons" class="feat-link page-nav-link">Xem ngay <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+            </div>
+
+            <!-- FEATURED QUOTE BLOCK -->
+            <div class="home-quote-block">
+                <div class="home-quote-inner">
+                    <i class="fa-solid fa-quote-left home-q-icon"></i>
+                    <blockquote class="home-big-quote">
+                        "Khi bạn chơi Trò Chơi Vương Quyền, bạn chỉ có thể <span class="q-gold">thắng</span> hoặc <span class="q-red">chết</span>."
+                    </blockquote>
+                    <cite class="home-q-author">— Cersei Lannister, Trò Chơi Vương Quyền</cite>
+                </div>
+            </div>
+
+            <!-- HOUSE PREVIEWS ROW -->
+            <div class="home-houses-preview">
+                <div class="section-header" style="padding-top:0">
+                    <h2 class="section-title">BỐN NGÔI NHÀ — MỘT NGAI VÀNG</h2>
+                    <div class="divider"></div>
+                    <p class="section-subtitle">Bốn đại gia tộc tranh giành quyền cai trị Bảy Vương Quốc</p>
+                </div>
+                <div class="house-preview-row">
+                    <a href="#houses" class="house-preview-item page-nav-link" style="--hc:#4a90e2">
+                        <img src="assets/images/sigil_stark.jpg" alt="Stark">
+                        <div class="hp-info">
+                            <h4>Stark</h4>
+                            <p>Winter is Coming</p>
+                        </div>
+                        <div class="hp-glow"></div>
+                    </a>
+                    <a href="#houses" class="house-preview-item page-nav-link" style="--hc:#c9a054">
+                        <img src="assets/images/sigil_lannister.jpg" alt="Lannister">
+                        <div class="hp-info">
+                            <h4>Lannister</h4>
+                            <p>Hear Me Roar</p>
+                        </div>
+                        <div class="hp-glow"></div>
+                    </a>
+                    <a href="#houses" class="house-preview-item page-nav-link" style="--hc:#a8201a">
+                        <img src="assets/images/sigil_targaryen.jpg" alt="Targaryen">
+                        <div class="hp-info">
+                            <h4>Targaryen</h4>
+                            <p>Fire and Blood</p>
+                        </div>
+                        <div class="hp-glow"></div>
+                    </a>
+                    <a href="#houses" class="house-preview-item page-nav-link" style="--hc:#d4af37">
+                        <img src="assets/images/sigil_baratheon.jpg" alt="Baratheon">
+                        <div class="hp-info">
+                            <h4>Baratheon</h4>
+                            <p>Ours is the Fury</p>
+                        </div>
+                        <div class="hp-glow"></div>
+                    </a>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- ================================================================
+             PAGE 2: CHARACTERS
+             ================================================================ -->
+        <section id="characters" class="page-section">
+            <div class="characters-section">
+                <div class="section-header">
+                    <h2 class="section-title">NHÂN VẬT HUYỀN THOẠI</h2>
+                    <div class="divider"></div>
+                    <p class="section-subtitle">Những linh hồn định hình nên số phận của Bảy Vương Quốc</p>
+                </div>
+                <div class="filters-container">
+                    <button class="filter-btn active" data-filter="all">Tất Cả</button>
+                    <button class="filter-btn" data-filter="Stark">Nhà Stark</button>
+                    <button class="filter-btn" data-filter="Lannister">Nhà Lannister</button>
+                    <button class="filter-btn" data-filter="Targaryen">Nhà Targaryen</button>
+                    <button class="filter-btn" data-filter="Baratheon">Nhà Baratheon</button>
+                </div>
+                <div class="characters-grid" id="characters-grid"></div>
+            </div>
+        </section>
+
+        <!-- ================================================================
+             PAGE 3: HOUSES
+             ================================================================ -->
+        <section id="houses" class="page-section">
+            <div class="houses-section">
+                <div class="section-header">
+                    <h2 class="section-title">CÁC ĐẠI GIA TỘC</h2>
+                    <div class="divider"></div>
+                    <p class="section-subtitle">Quyền lực tối thượng và những gia huy nhuốm máu</p>
+                </div>
+                <div class="houses-grid">
+                    <div class="house-card reveal" style="--accent:#4a90e2">
+                        <div class="house-image-wrapper"><img src="assets/images/sigil_stark.jpg" alt="House Stark Sigil" class="house-image"><div class="house-overlay"></div></div>
+                        <div class="house-info"><span class="house-badge">Phương Bắc</span><h3 class="house-name">Gia Tộc Stark</h3><h4 class="house-motto">"Winter is Coming"</h4><p class="house-desc">Cai trị phương Bắc lạnh giá từ thành Winterfell cổ kính. Họ là những con người kiên cường, trung thực và luôn coi trọng danh dự.</p></div>
+                    </div>
+                    <div class="house-card reveal" style="--accent:#c9a054">
+                        <div class="house-image-wrapper"><img src="assets/images/sigil_lannister.jpg" alt="House Lannister Sigil" class="house-image"><div class="house-overlay"></div></div>
+                        <div class="house-info"><span class="house-badge">Phương Tây</span><h3 class="house-name">Gia Tộc Lannister</h3><h4 class="house-motto">"Hear Me Roar!"</h4><p class="house-desc">Gia tộc giàu có bậc nhất Westeros từ Casterly Rock. Nổi tiếng với sự xảo quyệt, quyền thế và câu nói bất hủ "Một Lannister luôn trả nợ hết".</p></div>
+                    </div>
+                    <div class="house-card reveal" style="--accent:#a8201a">
+                        <div class="house-image-wrapper"><img src="assets/images/sigil_targaryen.jpg" alt="House Targaryen Sigil" class="house-image"><div class="house-overlay"></div></div>
+                        <div class="house-info"><span class="house-badge">Đế Vương</span><h3 class="house-name">Gia Tộc Targaryen</h3><h4 class="house-motto">"Fire and Blood"</h4><p class="house-desc">Gia tộc mang dòng máu rồng thiêng từ Valyria cổ xưa, từng thống trị Westeros hơn 300 năm bằng ngọn lửa quyền lực và rồng chiến.</p></div>
+                    </div>
+                    <div class="house-card reveal" style="--accent:#d4af37">
+                        <div class="house-image-wrapper"><img src="assets/images/sigil_baratheon.jpg" alt="House Baratheon Sigil" class="house-image"><div class="house-overlay"></div></div>
+                        <div class="house-info"><span class="house-badge">Vùng Bão</span><h3 class="house-name">Gia Tộc Baratheon</h3><h4 class="house-motto">"Ours is the Fury"</h4><p class="house-desc">Chủ nhân của vùng Storm's End, gia tộc chiến binh dũng mãnh đã lật đổ triều đại Targaryen để bước lên Ngai Sắt.</p></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================================================================
+             PAGE 4: DRAGONS
+             ================================================================ -->
+        <section id="dragons" class="page-section">
+            <div class="dragons-section">
+                <div class="section-header">
+                    <h2 class="section-title">CÁC LOÀI RỒNG HUYỀN THOẠI</h2>
+                    <div class="divider"></div>
+                    <p class="section-subtitle">Vũ khí hủy diệt tối thượng định hình lịch sử Bảy Vương Quốc</p>
+                </div>
+                <div class="filters-container">
+                    <button class="dragon-filter-btn active" data-filter="all">Tất Cả</button>
+                    <button class="dragon-filter-btn" data-filter="huge">Kích Thước Khổng Lồ</button>
+                    <button class="dragon-filter-btn" data-filter="combat">Thiện Chiến & Hung Tàn</button>
+                    <button class="dragon-filter-btn" data-filter="beautiful">Tuyệt Mỹ & Tốc Độ</button>
+                </div>
+                <div class="characters-grid" id="dragons-grid"></div>
+            </div>
+        </section>
+
+        <!-- ================================================================
+             PAGE 5: LESSONS
+             ================================================================ -->
+        <section id="lessons" class="page-section">
+            <div class="lessons-section">
+                <div class="section-header">
+                    <h2 class="section-title">BÀI HỌC CUỘC ĐỜI TỪ WESTEROS</h2>
+                    <div class="divider"></div>
+                    <p class="section-subtitle">Mỗi nhân vật là một tấm gương soi chiếu cho số phận, danh dự và sự sinh tồn</p>
+                </div>
+                <div class="lessons-grid">
+                    <div class="lesson-card reveal" style="--accent:#4a90e2">
+                        <div class="lesson-header-box"><i class="fa-solid fa-shield-halved lesson-icon"></i><h3 class="lesson-title">Danh Dự & Sự Sinh Tồn</h3></div>
+                        <p class="lesson-character">Tấm gương: <strong>Ned Stark & Robb Stark</strong></p>
+                        <p class="lesson-content">Danh dự và lời hứa là những đức tính cao quý nhất trong cuộc sống, nhưng nếu quá cứng nhắc và thiếu sự linh hoạt trước hoàn cảnh xung quanh, chúng ta có thể tự hại mình và những người xung quanh. Lòng kiêu hãnh cần được đặt đúng chỗ và đi đôi với tư duy chiến lược thực tế.</p>
+                    </div>
+                    <div class="lesson-card reveal" style="--accent:#c9a054">
+                        <div class="lesson-header-box"><i class="fa-solid fa-brain lesson-icon"></i><h3 class="lesson-title">Trí Tuệ & Nghịch Cảnh</h3></div>
+                        <p class="lesson-character">Tấm gương: <strong>Tyrion Lannister</strong></p>
+                        <p class="lesson-content">Nghịch cảnh và những khuyết điểm từ khi sinh ra không định nghĩa số phận của bạn. Bằng cách mài giũa trí thông minh, đọc sách, tích lũy kiến thức và tự tin đối mặt với thực tế, bạn có thể biến điểm yếu lớn nhất của bản thân thành bộ giáp vững chắc không ai có thể xuyên thủng.</p>
+                    </div>
+                    <div class="lesson-card reveal" style="--accent:#a8201a">
+                        <div class="lesson-header-box"><i class="fa-solid fa-fire lesson-icon"></i><h3 class="lesson-title">Dã Tâm Quyền Lực & Sự Tỉnh Táo</h3></div>
+                        <p class="lesson-character">Tấm gương: <strong>Daenerys & Cersei Lannister</strong></p>
+                        <p class="lesson-content">Quyền lực và hoài bão có thể nâng bước ta lên tầm cao vĩ đại, nhưng nếu thiếu đi sự đồng cảm, lòng trắc ẩn và sự tỉnh táo, chúng ta dễ rơi vào trạng thái cực đoan tự hủy hoại.</p>
+                    </div>
+                    <div class="lesson-card reveal" style="--accent:#d4af37">
+                        <div class="lesson-header-box"><i class="fa-solid fa-compass lesson-icon"></i><h3 class="lesson-title">Sự Kiên Nhẫn & Trưởng Thành</h3></div>
+                        <p class="lesson-character">Tấm gương: <strong>Sansa Stark & Arya Stark</strong></p>
+                        <p class="lesson-content">Trải qua đau đớn, tủi nhục hay mất mát không có nghĩa là cuộc đời chấm dứt. Sự kiên nhẫn tích lũy kinh nghiệm, bền bỉ thích nghi qua từng khó khăn sẽ biến một đứa trẻ ngây thơ thành những con người can đảm, độc lập và làm chủ vận mệnh.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- CHARACTER/DRAGON MODAL -->
+    <div class="modal-overlay" id="character-modal">
+        <div class="modal-container">
+            <div class="modal-close" id="modal-close-btn">&times;</div>
+            <div class="modal-body" id="modal-body-content"></div>
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="footer-container">
+        <div class="footer-content">
+            <div class="footer-brand">
+                <a href="#home" class="logo page-nav-link">
+                    <span class="logo-gold">WESTEROS</span>
+                    <span class="logo-sub">Chronicles</span>
+                </a>
+                <p>Website vinh danh tác phẩm kinh điển của George R.R. Martin. Thiết kế đặc sắc với tính tương tác cao và hình ảnh chất lượng điện ảnh.</p>
+            </div>
+            <div class="footer-links">
+                <h4>Khám phá</h4>
+                <ul>
+                    <li><a href="#home" class="page-nav-link">Trang Chủ</a></li>
+                    <li><a href="#characters" class="page-nav-link">Nhân Vật</a></li>
+                    <li><a href="#houses" class="page-nav-link">Gia Tộc</a></li>
+                    <li><a href="#dragons" class="page-nav-link">Các Loài Rồng</a></li>
+                    <li><a href="#lessons" class="page-nav-link">Bài Học Cuộc Đời</a></li>
+                </ul>
+            </div>
+            <div class="footer-socials">
+                <h4>Kết Nối</h4>
+                <div class="social-icons">
+                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Chronicles of Westeros. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- AUDIO: Game of Thrones Opening Theme by Ramin Djawadi -->
+    <audio id="bg-audio" preload="none" loop>
+        <source src="https://ia800501.us.archive.org/33/items/GameOfThronesThemeSong/Game%20of%20Thrones%20Theme%20Song.mp3" type="audio/mpeg">
+        <source src="https://archive.org/download/GameOfThronesThemeSong/Game%20of%20Thrones%20Theme%20Song.mp3" type="audio/mpeg">
+    </audio>
+
+    <script src="app.js"></script>
+</body>
+</html>
