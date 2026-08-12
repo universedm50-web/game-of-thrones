@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Danh mục sản phẩm Bình Minh Equipment — máy xúc Kobelco, xe lu Hamm, cầu trục Eurocrane, xe nâng. Lọc theo hãng, tải trọng, tình trạng.">
+  <title>Sản Phẩm | Bình Minh Equipment</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+<!-- TOP BAR -->
+<div class="topbar">
+  <div class="container">
+    <div class="topbar-contact">
+      <a href="tel:0909123456" class="hotline-badge"><i class="fas fa-phone-alt"></i> 0909 123 456</a>
+      <a href="mailto:info@binhminhequipment.vn" class="email"><i class="far fa-envelope"></i> info@binhminhequipment.vn</a>
+      <a href="#"><i class="fas fa-map-marker-alt"></i> 123 Nguyễn Văn Linh, TP.HCM</a>
+    </div>
+    <div class="topbar-social">
+      <a href="#"><i class="fab fa-facebook-f"></i></a>
+      <a href="#"><i class="fab fa-youtube"></i></a>
+      <a href="#"><i class="fas fa-comment-dots"></i></a>
+    </div>
+  </div>
+</div>
+
+<!-- HEADER -->
+<header class="header" id="header">
+  <div class="container">
+    <a href="index.html" class="logo">
+      <div class="logo-icon">BM</div>
+      <div class="logo-text"><span class="name">Bình Minh</span><span class="sub">Equipment</span></div>
+    </a>
+    <form class="search-bar" id="search-form">
+      <input type="text" id="search-input" placeholder="Tìm kiếm sản phẩm..." aria-label="Tìm kiếm">
+      <button type="submit"><i class="fas fa-search"></i></button>
+    </form>
+    <nav class="nav" id="main-nav">
+      <a href="index.html"    class="nav-link">Trang Chủ</a>
+      <a href="about.html"    class="nav-link">Giới Thiệu</a>
+      <a href="products.html" class="nav-link active">Sản Phẩm</a>
+      <a href="news.html"     class="nav-link">Tin Tức</a>
+      <a href="news.html#jobs" class="nav-link">Tuyển Dụng</a>
+      <a href="contact.html"  class="nav-link">Liên Hệ</a>
+    </nav>
+    <button class="hamburger" id="hamburger"><span></span><span></span><span></span></button>
+  </div>
+</header>
+
+<!-- PAGE HERO -->
+<div class="page-hero">
+  <div class="container">
+    <h1>Danh Mục Sản Phẩm</h1>
+    <p>Khám phá toàn bộ dải thiết bị máy công trình — Kobelco, Hamm, Eurocrane, Xe nâng</p>
+    <div class="breadcrumb-trail">
+      <a href="index.html">Trang Chủ</a>
+      <span>›</span>
+      <span class="current">Sản Phẩm</span>
+    </div>
+  </div>
+</div>
+
+<!-- PRODUCTS SECTION -->
+<section class="section">
+  <div class="container">
+    <div class="products-layout">
+
+      <!-- ===== SIDEBAR FILTER ===== -->
+      <aside class="filter-sidebar" id="filter-sidebar">
+        <h3><i class="fas fa-filter" style="color:var(--primary);margin-right:8px"></i> Bộ Lọc Sản Phẩm</h3>
+
+        <!-- DANH MỤC CHA -->
+        <div class="filter-group">
+          <label class="group-label" for="filter-category">Danh Mục</label>
+          <select id="filter-category" class="sort-select" style="width:100%;padding:11px 14px;border-radius:var(--radius-md)">
+            <option value="">-- Tất cả danh mục --</option>
+            <option value="kobelco">Máy Xúc Kobelco</option>
+            <option value="hamm">Xe Lu Hamm</option>
+            <option value="eurocrane">Cầu Trục Eurocrane</option>
+            <option value="forklift">Xe Nâng</option>
+          </select>
+        </div>
+
+        <!-- KHOẢNG GIÁ -->
+        <div class="filter-group">
+          <label class="group-label" for="filter-price">Mức Giá</label>
+          <select id="filter-price" class="sort-select" style="width:100%;padding:11px 14px;border-radius:var(--radius-md)">
+            <option value="">-- Tất cả mức giá --</option>
+            <option value="duoi1ty">Dưới 1 tỷ đồng</option>
+            <option value="1-3ty">1 tỷ — 3 tỷ đồng</option>
+            <option value="3-10ty">3 tỷ — 10 tỷ đồng</option>
+            <option value="tren10ty">Trên 10 tỷ đồng</option>
+          </select>
+        </div>
+
+        <button id="reset-filter" class="btn btn-outline-primary btn-sm" style="width:100%;margin-top:4px">
+          <i class="fas fa-undo"></i> Xóa Bộ Lọc
+        </button>
+      </aside>
+
+      <!-- ===== PRODUCT LISTING ===== -->
+      <div class="product-listing">
+        <div class="product-grid-header">
+          <p class="product-count" id="product-count">Đang tải...</p>
+          <select class="sort-select" id="sort-select" aria-label="Sắp xếp">
+            <option>Mặc định</option>
+            <option>Tên A-Z</option>
+            <option>Mới nhất</option>
+          </select>
+        </div>
+        <div class="product-grid" id="product-grid">
+          <!-- Rendered by JS -->
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="footer-top">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="logo" style="margin-bottom:16px">
+            <div class="logo-icon">BM</div>
+            <div class="logo-text"><span class="name">Bình Minh Equipment</span><span class="sub">Thiết Bị Công Trình</span></div>
+          </div>
+          <p>Nhà phân phối chính hãng máy xúc Kobelco, xe lu Hamm, cầu trục Eurocrane và xe nâng tại Việt Nam.</p>
+          <div class="social-links">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+            <a href="#"><i class="fas fa-comment-dots"></i></a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Điều Hướng</h4>
+          <div class="footer-links">
+            <a href="index.html">Trang Chủ</a>
+            <a href="about.html">Giới Thiệu</a>
+            <a href="products.html">Sản Phẩm</a>
+            <a href="news.html">Tin Tức</a>
+            <a href="contact.html">Liên Hệ</a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Sản Phẩm</h4>
+          <div class="footer-links">
+            <a href="products.html?brand=kobelco">Máy Xúc Kobelco</a>
+            <a href="products.html?brand=hamm">Xe Lu Hamm</a>
+            <a href="products.html?brand=eurocrane">Cầu Trục Eurocrane</a>
+            <a href="products.html?brand=forklift">Xe Nâng</a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Liên Hệ</h4>
+          <div class="branch-item">
+            <h5>Trụ Sở Chính — TP.HCM</h5>
+            <p>123 Nguyễn Văn Linh, Q.7, TP.HCM<br><i class="fas fa-phone"></i> 0909 123 456</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="footer-bottom">
+      <p>© 2026 Bình Minh Equipment. Mã ĐKKD: 0312345678</p>
+      <div class="footer-cert"><i class="fas fa-certificate" style="color:var(--primary)"></i><span>Đại Lý Chính Hãng</span></div>
+    </div>
+  </div>
+</footer>
+
+<!-- FLOAT BUTTONS -->
+<div class="float-buttons">
+  <a href="https://zalo.me/0909123456" target="_blank" class="float-btn zalo">
+    <span>Zalo</span><div class="tooltip">Chat Zalo ngay</div>
+  </a>
+  <a href="tel:0909123456" class="float-btn phone">
+    <i class="fas fa-phone-alt"></i><div class="tooltip">0909 123 456</div>
+  </a>
+</div>
+
+<!-- MODAL -->
+<div class="modal-overlay" id="modal-overlay">
+  <div class="modal-box">
+    <button class="modal-close-btn">✕</button>
+    <h3>Yêu Cầu Báo Giá</h3>
+    <p class="modal-sub">Điền thông tin để nhận báo giá tốt nhất từ đội kinh doanh của chúng tôi.</p>
+    <form id="modal-form">
+      <div class="form-group">
+        <label>Họ và Tên <span>*</span></label>
+        <input type="text" class="form-control" placeholder="Nguyễn Văn A" required>
+      </div>
+      <div class="form-group">
+        <label>Số Điện Thoại <span>*</span></label>
+        <input type="tel" class="form-control" placeholder="0909 123 456" required>
+      </div>
+      <div class="form-group">
+        <label>Sản Phẩm Quan Tâm</label>
+        <input type="text" class="form-control" placeholder="VD: Kobelco SK200" id="modal-product-fill">
+      </div>
+      <button type="submit" class="btn btn-primary" style="width:100%">Gửi Yêu Cầu <i class="fas fa-paper-plane"></i></button>
+    </form>
+  </div>
+</div>
+
+<script src="js/data.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

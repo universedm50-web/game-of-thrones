@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Chi tiết sản phẩm máy xúc, xe lu, cầu trục — thông số kỹ thuật, hình ảnh, báo giá. Bình Minh Equipment.">
+  <title>Chi Tiết Sản Phẩm | Bình Minh Equipment</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+<!-- TOP BAR -->
+<div class="topbar">
+  <div class="container">
+    <div class="topbar-contact">
+      <a href="tel:0909123456" class="hotline-badge"><i class="fas fa-phone-alt"></i> 0909 123 456</a>
+      <a href="mailto:info@binhminhequipment.vn" class="email"><i class="far fa-envelope"></i> info@binhminhequipment.vn</a>
+    </div>
+    <div class="topbar-social">
+      <a href="#"><i class="fab fa-facebook-f"></i></a>
+      <a href="#"><i class="fab fa-youtube"></i></a>
+    </div>
+  </div>
+</div>
+
+<!-- HEADER -->
+<header class="header" id="header">
+  <div class="container">
+    <a href="index.html" class="logo">
+      <div class="logo-icon">BM</div>
+      <div class="logo-text"><span class="name">Bình Minh</span><span class="sub">Equipment</span></div>
+    </a>
+    <form class="search-bar" id="search-form">
+      <input type="text" id="search-input" placeholder="Tìm kiếm sản phẩm..." aria-label="Tìm kiếm">
+      <button type="submit"><i class="fas fa-search"></i></button>
+    </form>
+    <nav class="nav" id="main-nav">
+      <a href="index.html"    class="nav-link">Trang Chủ</a>
+      <a href="about.html"    class="nav-link">Giới Thiệu</a>
+      <a href="products.html" class="nav-link active">Sản Phẩm</a>
+      <a href="news.html"     class="nav-link">Tin Tức</a>
+      <a href="news.html#jobs" class="nav-link">Tuyển Dụng</a>
+      <a href="contact.html"  class="nav-link">Liên Hệ</a>
+    </nav>
+    <button class="hamburger" id="hamburger"><span></span><span></span><span></span></button>
+  </div>
+</header>
+
+<!-- DETAIL ROOT -->
+<div id="detail-root">
+  <section class="section">
+    <div class="container">
+
+      <!-- Breadcrumb -->
+      <div style="display:flex;align-items:center;gap:8px;margin-bottom:32px;font-size:.9rem;color:var(--text-light)">
+        <a href="index.html" style="color:var(--text-light)">Trang Chủ</a>
+        <span>›</span>
+        <a href="products.html" style="color:var(--text-light)">Sản Phẩm</a>
+        <span>›</span>
+        <span id="detail-name" style="color:var(--primary)">Đang tải...</span>
+      </div>
+
+      <div class="product-detail-layout">
+        <!-- Gallery -->
+        <div class="product-gallery fade-in-left">
+          <div class="gallery-main" id="gallery-main" title="Nhấn để phóng to">
+            <img src="images/cat_kobelco.jpg" alt="Ảnh sản phẩm" id="main-img">
+          </div>
+          <div class="gallery-thumbs">
+            <div class="thumb active" onclick="switchImg(this)">
+              <img src="images/cat_kobelco.jpg" alt="thumb 1">
+            </div>
+            <div class="thumb" onclick="switchImg(this)">
+              <img src="images/hero_kobelco.jpg" alt="thumb 2">
+            </div>
+            <div class="thumb" onclick="switchImg(this)">
+              <img src="images/about_team.jpg" alt="thumb 3">
+            </div>
+          </div>
+        </div>
+
+        <!-- Product Info -->
+        <div class="product-info fade-in-right">
+          <div style="display:flex;gap:10px;margin-bottom:16px;flex-wrap:wrap">
+            <span class="status-badge" id="detail-status" style="position:static;font-size:.85rem;padding:6px 14px">Mới 100%</span>
+            <span style="background:var(--dark);color:#fff;font-size:.8rem;font-weight:700;padding:6px 14px;border-radius:100px;font-family:var(--font-heading)" id="detail-brand">KOBELCO</span>
+          </div>
+
+          <h1 id="detail-name-main" style="font-size:2rem;color:var(--dark);margin-bottom:20px">Đang tải...</h1>
+
+          <div class="product-meta-row" id="detail-tags">
+            <!-- Rendered by JS -->
+          </div>
+
+          <p class="product-desc" id="detail-desc">Đang tải...</p>
+
+          <!-- Specs Table -->
+          <table class="specs-table">
+            <caption>Thông Số Kỹ Thuật</caption>
+            <tbody id="specs-tbody">
+              <tr><td colspan="2" style="text-align:center;color:var(--gray-400)">Đang tải...</td></tr>
+            </tbody>
+          </table>
+
+          <!-- CTA -->
+          <div class="product-cta">
+            <div class="cta-row">
+              <button class="btn btn-primary" data-modal id="cta-quote">
+                <i class="fas fa-file-invoice-dollar"></i> Nhận Báo Giá
+              </button>
+              <a href="contact.html" class="btn btn-outline-primary">
+                <i class="fas fa-headset"></i> Tư Vấn
+              </a>
+            </div>
+            <div class="cta-hotline">
+              <i class="fas fa-phone-alt"></i>
+              <div>
+                <div class="line1">Hotline tư vấn miễn phí</div>
+                <div class="line2">0909 123 456</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- RELATED PRODUCTS -->
+  <section class="section bg-light">
+    <div class="container">
+      <div class="section-header center fade-in">
+        <span class="label"><i class="fas fa-th"></i> Sản Phẩm Liên Quan</span>
+        <h2>Sản Phẩm Cùng Dòng</h2>
+        <div class="title-bar"></div>
+      </div>
+      <div class="product-grid" id="related-grid">
+        <!-- Rendered by JS -->
+      </div>
+    </div>
+  </section>
+</div>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="footer-top">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="logo" style="margin-bottom:16px">
+            <div class="logo-icon">BM</div>
+            <div class="logo-text"><span class="name">Bình Minh Equipment</span><span class="sub">Thiết Bị Công Trình</span></div>
+          </div>
+          <p>Nhà phân phối chính hãng máy xúc Kobelco, xe lu Hamm tại Việt Nam.</p>
+          <div class="social-links">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Điều Hướng</h4>
+          <div class="footer-links">
+            <a href="index.html">Trang Chủ</a>
+            <a href="products.html">Sản Phẩm</a>
+            <a href="contact.html">Liên Hệ</a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Sản Phẩm</h4>
+          <div class="footer-links">
+            <a href="products.html?brand=kobelco">Máy Xúc Kobelco</a>
+            <a href="products.html?brand=hamm">Xe Lu Hamm</a>
+            <a href="products.html?brand=eurocrane">Cầu Trục Eurocrane</a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Liên Hệ</h4>
+          <div class="branch-item">
+            <h5>Trụ Sở Chính</h5>
+            <p>123 Nguyễn Văn Linh, Q.7, TP.HCM<br><i class="fas fa-phone"></i> 0909 123 456</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="footer-bottom">
+      <p>© 2026 Bình Minh Equipment. Mã ĐKKD: 0312345678</p>
+    </div>
+  </div>
+</footer>
+
+<!-- FLOAT BUTTONS -->
+<div class="float-buttons">
+  <a href="https://zalo.me/0909123456" target="_blank" class="float-btn zalo">
+    <span>Zalo</span><div class="tooltip">Chat Zalo ngay</div>
+  </a>
+  <a href="tel:0909123456" class="float-btn phone">
+    <i class="fas fa-phone-alt"></i><div class="tooltip">0909 123 456</div>
+  </a>
+</div>
+
+<!-- LIGHTBOX -->
+<div class="lightbox" id="lightbox">
+  <div class="lightbox-close">✕</div>
+  <img src="" alt="Phóng to ảnh sản phẩm">
+</div>
+
+<!-- MODAL -->
+<div class="modal-overlay" id="modal-overlay">
+  <div class="modal-box">
+    <button class="modal-close-btn">✕</button>
+    <h3>Nhận Báo Giá</h3>
+    <p class="modal-sub">Vui lòng điền thông tin, chúng tôi sẽ gửi báo giá chi tiết trong 30 phút.</p>
+    <form id="modal-form">
+      <div class="form-group">
+        <label>Họ và Tên <span>*</span></label>
+        <input type="text" class="form-control" placeholder="Nguyễn Văn A" required>
+      </div>
+      <div class="form-group">
+        <label>Số Điện Thoại <span>*</span></label>
+        <input type="tel" class="form-control" placeholder="0909 123 456" required>
+      </div>
+      <div class="form-group">
+        <label>Email</label>
+        <input type="email" class="form-control" placeholder="email@example.com">
+      </div>
+      <div class="form-group">
+        <label>Ghi Chú</label>
+        <textarea class="form-control" rows="3" placeholder="Yêu cầu cụ thể..."></textarea>
+      </div>
+      <button type="submit" class="btn btn-primary" style="width:100%">Gửi Yêu Cầu <i class="fas fa-paper-plane"></i></button>
+    </form>
+  </div>
+</div>
+
+<script src="js/data.js"></script>
+<script src="js/main.js"></script>
+<script>
+// Thumbnail switcher
+function switchImg(el) {
+  document.querySelectorAll('.thumb').forEach(t => t.classList.remove('active'));
+  el.classList.add('active');
+  const mainImg = document.getElementById('main-img');
+  if (mainImg) mainImg.src = el.querySelector('img').src;
+}
+// Sync detail name to h1
+document.addEventListener('DOMContentLoaded', () => {
+  const n = document.getElementById('detail-name');
+  const h = document.getElementById('detail-name-main');
+  if (n && h) {
+    const observer = new MutationObserver(() => { h.textContent = n.textContent; });
+    observer.observe(n, { childList: true, characterData: true, subtree: true });
+  }
+});
+</script>
+</body>
+</html>

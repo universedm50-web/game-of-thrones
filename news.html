@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Tin tức, sự kiện mới nhất và cơ hội tuyển dụng tại Bình Minh Equipment. Lễ bàn giao, triển lãm, kiến thức kỹ thuật bảo dưỡng máy xúc.">
+  <title>Tin Tức & Tuyển Dụng | Bình Minh Equipment</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+<!-- TOP BAR -->
+<div class="topbar">
+  <div class="container">
+    <div class="topbar-contact">
+      <a href="tel:0909123456" class="hotline-badge"><i class="fas fa-phone-alt"></i> 0909 123 456</a>
+      <a href="mailto:info@binhminhequipment.vn" class="email"><i class="far fa-envelope"></i> info@binhminhequipment.vn</a>
+    </div>
+    <div class="topbar-social">
+      <a href="#"><i class="fab fa-facebook-f"></i></a>
+      <a href="#"><i class="fab fa-youtube"></i></a>
+    </div>
+  </div>
+</div>
+
+<!-- HEADER -->
+<header class="header" id="header">
+  <div class="container">
+    <a href="index.html" class="logo">
+      <div class="logo-icon">BM</div>
+      <div class="logo-text"><span class="name">Bình Minh</span><span class="sub">Equipment</span></div>
+    </a>
+    <form class="search-bar" id="search-form">
+      <input type="text" id="search-input" placeholder="Tìm kiếm tin tức..." aria-label="Tìm kiếm">
+      <button type="submit"><i class="fas fa-search"></i></button>
+    </form>
+    <nav class="nav" id="main-nav">
+      <a href="index.html"    class="nav-link">Trang Chủ</a>
+      <a href="about.html"    class="nav-link">Giới Thiệu</a>
+      <a href="products.html" class="nav-link">Sản Phẩm</a>
+      <a href="news.html"     class="nav-link active">Tin Tức</a>
+      <a href="news.html#jobs" class="nav-link">Tuyển Dụng</a>
+      <a href="contact.html"  class="nav-link">Liên Hệ</a>
+    </nav>
+    <button class="hamburger" id="hamburger"><span></span><span></span><span></span></button>
+  </div>
+</header>
+
+<!-- PAGE HERO -->
+<div class="page-hero">
+  <div class="container">
+    <h1>Tin Tức & Tuyển Dụng</h1>
+    <p>Cập nhật sự kiện, kiến thức kỹ thuật và cơ hội gia nhập đội ngũ Bình Minh Equipment</p>
+    <div class="breadcrumb-trail">
+      <a href="index.html">Trang Chủ</a>
+      <span>›</span>
+      <span class="current">Tin Tức & Tuyển Dụng</span>
+    </div>
+  </div>
+</div>
+
+<!-- NEWS ROOT -->
+<div id="news-root">
+  <section class="section">
+    <div class="container">
+
+      <!-- TABS -->
+      <div class="news-tabs">
+        <button class="tab-btn active" data-tab="tab-news" id="btn-news">
+          <i class="far fa-newspaper"></i> Tin Tức & Sự Kiện
+        </button>
+        <button class="tab-btn" data-tab="tab-jobs" id="btn-jobs">
+          <i class="fas fa-briefcase"></i> Tuyển Dụng
+        </button>
+      </div>
+
+      <!-- TAB: NEWS -->
+      <div class="tab-pane active" id="tab-news">
+        <div class="news-list-grid" id="news-list-grid">
+          <!-- Rendered by JS -->
+        </div>
+      </div>
+
+      <!-- TAB: JOBS -->
+      <div class="tab-pane" id="tab-jobs">
+        <div style="background:linear-gradient(135deg,#0D1F3C,#1A3356);border-radius:var(--radius-lg);padding:40px;margin-bottom:40px;display:flex;align-items:center;gap:32px;flex-wrap:wrap">
+          <div>
+            <span class="label" style="color:var(--primary);background:rgba(245,166,35,.15);border-color:rgba(245,166,35,.3);display:inline-flex;margin-bottom:12px">
+              <i class="fas fa-users"></i> Tuyển Dụng
+            </span>
+            <h2 style="color:#fff;margin-bottom:10px">Gia Nhập Đội Ngũ Bình Minh</h2>
+            <p style="color:rgba(255,255,255,.7)">Chúng tôi luôn tìm kiếm những cá nhân tài năng, đam mê và muốn phát triển cùng chúng tôi trong ngành thiết bị xây dựng.</p>
+          </div>
+          <a href="contact.html" class="btn btn-primary" style="flex-shrink:0">Gửi CV Tự Do <i class="fas fa-paper-plane"></i></a>
+        </div>
+        <div class="news-list-grid" id="jobs-grid">
+          <!-- Rendered by JS -->
+        </div>
+      </div>
+
+    </div>
+  </section>
+</div>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="footer-top">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="logo" style="margin-bottom:16px">
+            <div class="logo-icon">BM</div>
+            <div class="logo-text"><span class="name">Bình Minh Equipment</span><span class="sub">Thiết Bị Công Trình</span></div>
+          </div>
+          <p>Nhà phân phối chính hãng máy xúc Kobelco, xe lu Hamm tại Việt Nam.</p>
+          <div class="social-links">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+            <a href="#"><i class="fas fa-comment-dots"></i></a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Điều Hướng</h4>
+          <div class="footer-links">
+            <a href="index.html">Trang Chủ</a>
+            <a href="about.html">Giới Thiệu</a>
+            <a href="products.html">Sản Phẩm</a>
+            <a href="news.html">Tin Tức</a>
+            <a href="contact.html">Liên Hệ</a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Sản Phẩm</h4>
+          <div class="footer-links">
+            <a href="products.html?brand=kobelco">Máy Xúc Kobelco</a>
+            <a href="products.html?brand=hamm">Xe Lu Hamm</a>
+            <a href="products.html?brand=eurocrane">Cầu Trục Eurocrane</a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Liên Hệ</h4>
+          <div class="branch-item">
+            <h5>Trụ Sở Chính — TP.HCM</h5>
+            <p>123 Nguyễn Văn Linh, Q.7, TP.HCM<br><i class="fas fa-phone"></i> 0909 123 456</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="footer-bottom">
+      <p>© 2026 Bình Minh Equipment. Mã ĐKKD: 0312345678</p>
+      <div class="footer-cert"><i class="fas fa-certificate" style="color:var(--primary)"></i><span>Đại Lý Chính Hãng</span></div>
+    </div>
+  </div>
+</footer>
+
+<!-- FLOAT BUTTONS -->
+<div class="float-buttons">
+  <a href="https://zalo.me/0909123456" target="_blank" class="float-btn zalo">
+    <span>Zalo</span><div class="tooltip">Chat Zalo ngay</div>
+  </a>
+  <a href="tel:0909123456" class="float-btn phone">
+    <i class="fas fa-phone-alt"></i><div class="tooltip">0909 123 456</div>
+  </a>
+</div>
+
+<script src="js/data.js"></script>
+<script src="js/main.js"></script>
+<script>
+// Auto-switch to jobs tab if hash is #jobs
+if (window.location.hash === '#jobs') {
+  document.getElementById('btn-jobs')?.click();
+}
+</script>
+</body>
+</html>

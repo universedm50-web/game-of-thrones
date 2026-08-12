@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Giới thiệu về Bình Minh Equipment — hành trình 15 năm, tầm nhìn, cam kết và mạng lưới chi nhánh toàn quốc.">
+  <title>Giới Thiệu | Bình Minh Equipment</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    .map-static {
+      background: linear-gradient(135deg,#0D1F3C,#1A3356);
+      border-radius: var(--radius-lg); padding: 60px 40px;
+      position: relative; overflow: hidden; text-align: center;
+    }
+    .map-static::before {
+      content: '';
+      position: absolute; inset: 0;
+      background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="800" height="600" viewBox="0 0 800 600"><text x="400" y="300" text-anchor="middle" fill="rgba(245,166,35,0.08)" font-size="200" font-family="Arial">VN</text></svg>') center/contain no-repeat;
+    }
+    .map-pins { display: flex; justify-content: center; flex-wrap: wrap; gap: 24px; position: relative; z-index: 1; }
+    .map-pin {
+      background: rgba(255,255,255,.08); border: 1px solid rgba(245,166,35,.3);
+      border-radius: var(--radius-md); padding: 20px 28px; text-align: center;
+      min-width: 180px; backdrop-filter: blur(8px);
+    }
+    .map-pin i { font-size: 1.8rem; color: var(--primary); margin-bottom: 10px; display: block; }
+    .map-pin h4 { color: #fff; font-size: .95rem; margin-bottom: 6px; }
+    .map-pin p  { color: rgba(255,255,255,.6); font-size: .8rem; }
+  </style>
+</head>
+<body>
+
+<!-- TOP BAR -->
+<div class="topbar">
+  <div class="container">
+    <div class="topbar-contact">
+      <a href="tel:0909123456" class="hotline-badge"><i class="fas fa-phone-alt"></i> 0909 123 456</a>
+      <a href="mailto:info@binhminhequipment.vn" class="email"><i class="far fa-envelope"></i> info@binhminhequipment.vn</a>
+    </div>
+    <div class="topbar-social">
+      <a href="#"><i class="fab fa-facebook-f"></i></a>
+      <a href="#"><i class="fab fa-youtube"></i></a>
+    </div>
+  </div>
+</div>
+
+<!-- HEADER -->
+<header class="header" id="header">
+  <div class="container">
+    <a href="index.html" class="logo">
+      <div class="logo-icon">BM</div>
+      <div class="logo-text"><span class="name">Bình Minh</span><span class="sub">Equipment</span></div>
+    </a>
+    <form class="search-bar" id="search-form">
+      <input type="text" id="search-input" placeholder="Tìm kiếm..." aria-label="Tìm kiếm">
+      <button type="submit"><i class="fas fa-search"></i></button>
+    </form>
+    <nav class="nav" id="main-nav">
+      <a href="index.html"    class="nav-link">Trang Chủ</a>
+      <a href="about.html"    class="nav-link active">Giới Thiệu</a>
+      <a href="products.html" class="nav-link">Sản Phẩm</a>
+      <a href="news.html"     class="nav-link">Tin Tức</a>
+      <a href="news.html#jobs" class="nav-link">Tuyển Dụng</a>
+      <a href="contact.html"  class="nav-link">Liên Hệ</a>
+    </nav>
+    <button class="hamburger" id="hamburger"><span></span><span></span><span></span></button>
+  </div>
+</header>
+
+<!-- PAGE HERO -->
+<div class="page-hero">
+  <div class="container">
+    <h1>Giới Thiệu Bình Minh Equipment</h1>
+    <p>Hơn 15 năm đồng hành cùng ngành xây dựng Việt Nam — uy tín, chuyên nghiệp, tận tâm</p>
+    <div class="breadcrumb-trail">
+      <a href="index.html">Trang Chủ</a>
+      <span>›</span>
+      <span class="current">Giới Thiệu</span>
+    </div>
+  </div>
+</div>
+
+<!-- ABOUT STORY -->
+<section class="section">
+  <div class="container">
+    <div class="about-block">
+      <div class="img-wrap fade-in-left">
+        <img src="images/about_team.jpg" alt="Đội ngũ Bình Minh Equipment">
+        <div class="img-badge">
+          <div class="num" data-count="15" data-suffix="+">0+</div>
+          <div class="txt">Năm kinh nghiệm</div>
+        </div>
+      </div>
+      <div class="about-content fade-in-right">
+        <div class="section-header">
+          <span class="label"><i class="fas fa-history"></i> Câu Chuyện Của Chúng Tôi</span>
+          <h2>Khởi Nghiệp Từ Niềm Tin,<br>Lớn Mạnh Bằng Uy Tín</h2>
+          <div class="title-bar"></div>
+        </div>
+        <p style="margin-bottom:16px">Bình Minh Equipment được thành lập năm 2009 bởi đội ngũ kỹ sư và chuyên gia có nhiều năm kinh nghiệm trong ngành thiết bị xây dựng. Xuất phát từ một văn phòng nhỏ tại TP.HCM với chỉ 5 nhân viên, chúng tôi đã không ngừng nỗ lực xây dựng nền tảng vững chắc.</p>
+        <p style="margin-bottom:16px">Năm 2012, chúng tôi chính thức trở thành Đại Lý Chính Hãng của <strong>Kobelco Construction Machinery</strong> — thương hiệu máy xúc danh tiếng Nhật Bản. Năm 2015, mở rộng sang phân phối <strong>xe lu Hamm (WIRTGEN GROUP, Đức)</strong> và <strong>cầu trục Eurocrane (Châu Âu)</strong>.</p>
+        <p>Đến nay, với hơn 500 máy đã bàn giao, hơn 300 khách hàng tin tưởng trên khắp cả nước và mạng lưới 5 chi nhánh từ Bắc vào Nam, Bình Minh Equipment tự hào là đối tác thiết bị tin cậy của nhiều tập đoàn xây dựng, nhà thầu và chủ đầu tư lớn tại Việt Nam.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TIMELINE -->
+<section class="section bg-light">
+  <div class="container">
+    <div class="section-header center fade-in">
+      <span class="label"><i class="fas fa-road"></i> Hành Trình</span>
+      <h2>Các Cột Mốc Phát Triển</h2>
+      <div class="title-bar"></div>
+    </div>
+    <div style="max-width:760px;margin:0 auto">
+      <div class="timeline">
+        <div class="tl-item fade-in">
+          <div class="tl-dot"></div>
+          <div class="tl-year">2009</div>
+          <h4>Thành Lập Công Ty</h4>
+          <p>Bình Minh Equipment chính thức ra đời tại TP.HCM với 5 thành viên sáng lập. Bắt đầu từ dịch vụ tư vấn và mua bán máy xúc cũ.</p>
+        </div>
+        <div class="tl-item fade-in">
+          <div class="tl-dot"></div>
+          <div class="tl-year">2012</div>
+          <h4>Ký Kết Đại Lý Chính Hãng Kobelco</h4>
+          <p>Trở thành Đại Lý Ủy Quyền chính hãng Kobelco Construction Machinery tại khu vực miền Nam Việt Nam. Nhập khẩu và phân phối toàn dải máy xúc Kobelco.</p>
+        </div>
+        <div class="tl-item fade-in">
+          <div class="tl-dot"></div>
+          <div class="tl-year">2015</div>
+          <h4>Mở Rộng Danh Mục Sản Phẩm</h4>
+          <p>Chính thức phân phối xe lu Hamm (WIRTGEN GROUP, Đức) và cầu trục Eurocrane (Châu Âu). Khai trương chi nhánh Hà Nội, phủ sóng toàn quốc.</p>
+        </div>
+        <div class="tl-item fade-in">
+          <div class="tl-dot"></div>
+          <div class="tl-year">2018</div>
+          <h4>Mở Kho Bãi Đồng Nai — Quy Mô 5 Ha</h4>
+          <p>Đầu tư xây dựng trung tâm lưu trữ và bảo dưỡng máy móc quy mô 5 ha tại Khu Công Nghiệp Biên Hòa 2, Đồng Nai. Tăng năng lực phục vụ gấp 3 lần.</p>
+        </div>
+        <div class="tl-item fade-in">
+          <div class="tl-dot"></div>
+          <div class="tl-year">2021</div>
+          <h4>Bàn Giao Máy Xúc Cho Dự Án Cao Tốc Bắc-Nam</h4>
+          <p>Cung cấp 20 máy xúc Kobelco SK330 cho các gói thầu thuộc dự án đường cao tốc Bắc-Nam — hợp đồng lớn nhất trong lịch sử công ty tính đến thời điểm đó.</p>
+        </div>
+        <div class="tl-item fade-in">
+          <div class="tl-dot"></div>
+          <div class="tl-year">2024</div>
+          <h4>Top 3 Đại Lý Kobelco Xuất Sắc Nhất Đông Nam Á</h4>
+          <p>Vinh dự nhận danh hiệu Top 3 Đại Lý Kobelco Xuất Sắc Đông Nam Á do Kobelco Construction Machinery Japan trao tặng tại lễ vinh danh thường niên.</p>
+        </div>
+        <div class="tl-item fade-in">
+          <div class="tl-dot"></div>
+          <div class="tl-year">2026</div>
+          <h4>Mở Rộng — 5 Chi Nhánh Toàn Quốc</h4>
+          <p>Khai trương chi nhánh Cần Thơ và Đà Nẵng, hoàn thiện mạng lưới 5 chi nhánh: TP.HCM, Hà Nội, Đà Nẵng, Đồng Nai, Cần Thơ. Hướng tới 1000 máy bàn giao.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- VALUES -->
+<section class="section">
+  <div class="container">
+    <div class="section-header center fade-in">
+      <span class="label"><i class="fas fa-heart"></i> Giá Trị Cốt Lõi</span>
+      <h2>Tại Sao Chọn Bình Minh Equipment?</h2>
+      <div class="title-bar"></div>
+    </div>
+    <div class="values-grid">
+      <div class="value-card fade-in">
+        <div class="value-icon"><i class="fas fa-shield-alt"></i></div>
+        <h3>Chính Hãng 100%</h3>
+        <p>Toàn bộ sản phẩm nhập khẩu trực tiếp từ nhà sản xuất, kèm đầy đủ CO, CQ, chứng nhận xuất xứ. Không phân phối hàng song song hay hàng nhái.</p>
+      </div>
+      <div class="value-card fade-in">
+        <div class="value-icon"><i class="fas fa-tools"></i></div>
+        <h3>Kỹ Thuật Được Đào Tạo Tại Nguồn</h3>
+        <p>Đội ngũ kỹ thuật viên được đào tạo trực tiếp tại nhà máy Kobelco (Nhật Bản) và WIRTGEN Group (Đức). Bảo dưỡng đúng chuẩn nhà sản xuất.</p>
+      </div>
+      <div class="value-card fade-in">
+        <div class="value-icon"><i class="fas fa-clock"></i></div>
+        <h3>Hỗ Trợ 24/7</h3>
+        <p>Đường dây hỗ trợ kỹ thuật hoạt động 24/7, đảm bảo máy của bạn luôn trong tình trạng hoạt động tối ưu, không gián đoạn tiến độ công trình.</p>
+      </div>
+      <div class="value-card fade-in">
+        <div class="value-icon"><i class="fas fa-handshake"></i></div>
+        <h3>Cam Kết Sau Bán Hàng</h3>
+        <p>Bảo hành theo tiêu chuẩn nhà sản xuất. Cung cấp linh kiện chính hãng. Cam kết thời gian cung ứng linh kiện tối đa 7 ngày trên toàn quốc.</p>
+      </div>
+      <div class="value-card fade-in">
+        <div class="value-icon"><i class="fas fa-percentage"></i></div>
+        <h3>Hỗ Trợ Tài Chính</h3>
+        <p>Kết nối với các ngân hàng đối tác, hỗ trợ vay vốn mua máy với lãi suất ưu đãi, thủ tục đơn giản, giải ngân nhanh trong 3-5 ngày làm việc.</p>
+      </div>
+      <div class="value-card fade-in">
+        <div class="value-icon"><i class="fas fa-map-marked-alt"></i></div>
+        <h3>Phủ Sóng Toàn Quốc</h3>
+        <p>5 chi nhánh từ Bắc vào Nam đảm bảo dịch vụ tư vấn, giao máy và bảo dưỡng tại chỗ nhanh nhất trong ngành, giảm chi phí logistics đáng kể.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PARTNERS -->
+<section class="section bg-light">
+  <div class="container">
+    <div class="section-header center fade-in">
+      <span class="label"><i class="fas fa-award"></i> Đối Tác</span>
+      <h2>Thương Hiệu Chúng Tôi Phân Phối</h2>
+      <div class="title-bar"></div>
+    </div>
+    <div class="partners-strip fade-in">
+      <div class="partner-logo">⚙ KOBELCO<br><small style="font-size:.7rem;font-weight:400;color:#888">Nhật Bản</small></div>
+      <div class="partner-logo">🛣 HAMM<br><small style="font-size:.7rem;font-weight:400;color:#888">Đức (WIRTGEN)</small></div>
+      <div class="partner-logo">🏗 EUROCRANE<br><small style="font-size:.7rem;font-weight:400;color:#888">Châu Âu</small></div>
+      <div class="partner-logo">🔧 VÖGELE<br><small style="font-size:.7rem;font-weight:400;color:#888">Đức</small></div>
+    </div>
+  </div>
+</section>
+
+<!-- BRANCH MAP -->
+<section class="section">
+  <div class="container">
+    <div class="section-header center fade-in">
+      <span class="label"><i class="fas fa-network-wired"></i> Mạng Lưới</span>
+      <h2>Hệ Thống Chi Nhánh Toàn Quốc</h2>
+      <div class="title-bar"></div>
+    </div>
+    <div class="map-static fade-in">
+      <div class="map-pins">
+        <div class="map-pin">
+          <i class="fas fa-map-pin"></i>
+          <h4>Trụ Sở — TP.HCM</h4>
+          <p>123 Nguyễn Văn Linh, Q.7</p>
+        </div>
+        <div class="map-pin">
+          <i class="fas fa-map-pin"></i>
+          <h4>Chi Nhánh Hà Nội</h4>
+          <p>456 Trần Duy Hưng, Cầu Giấy</p>
+        </div>
+        <div class="map-pin">
+          <i class="fas fa-map-pin"></i>
+          <h4>Chi Nhánh Đà Nẵng</h4>
+          <p>789 Điện Biên Phủ, Thanh Khê</p>
+        </div>
+        <div class="map-pin">
+          <i class="fas fa-map-pin"></i>
+          <h4>Kho Bãi Đồng Nai</h4>
+          <p>KCN Biên Hòa 2, Đồng Nai</p>
+        </div>
+        <div class="map-pin">
+          <i class="fas fa-map-pin"></i>
+          <h4>Chi Nhánh Cần Thơ</h4>
+          <p>Ninh Kiều, Cần Thơ</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="footer-top">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="logo" style="margin-bottom:16px">
+            <div class="logo-icon">BM</div>
+            <div class="logo-text"><span class="name">Bình Minh Equipment</span><span class="sub">Thiết Bị Công Trình</span></div>
+          </div>
+          <p>Nhà phân phối chính hãng máy xúc Kobelco, xe lu Hamm tại Việt Nam. Hơn 15 năm uy tín.</p>
+          <div class="social-links">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+            <a href="#"><i class="fas fa-comment-dots"></i></a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Điều Hướng</h4>
+          <div class="footer-links">
+            <a href="index.html">Trang Chủ</a>
+            <a href="about.html">Giới Thiệu</a>
+            <a href="products.html">Sản Phẩm</a>
+            <a href="news.html">Tin Tức</a>
+            <a href="contact.html">Liên Hệ</a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Sản Phẩm</h4>
+          <div class="footer-links">
+            <a href="products.html?brand=kobelco">Máy Xúc Kobelco</a>
+            <a href="products.html?brand=hamm">Xe Lu Hamm</a>
+            <a href="products.html?brand=eurocrane">Cầu Trục Eurocrane</a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Liên Hệ</h4>
+          <div class="branch-item">
+            <h5>Trụ Sở Chính — TP.HCM</h5>
+            <p>123 Nguyễn Văn Linh, Q.7, TP.HCM<br><i class="fas fa-phone"></i> 0909 123 456</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="footer-bottom">
+      <p>© 2026 Bình Minh Equipment. Mã ĐKKD: 0312345678 cấp tại Sở KH&ĐT TP.HCM.</p>
+      <div class="footer-cert"><i class="fas fa-certificate" style="color:var(--primary)"></i><span>Đại Lý Chính Hãng Kobelco & Hamm</span></div>
+    </div>
+  </div>
+</footer>
+
+<!-- FLOAT BUTTONS -->
+<div class="float-buttons">
+  <a href="https://zalo.me/0909123456" target="_blank" class="float-btn zalo">
+    <span>Zalo</span><div class="tooltip">Chat Zalo ngay</div>
+  </a>
+  <a href="tel:0909123456" class="float-btn phone">
+    <i class="fas fa-phone-alt"></i><div class="tooltip">0909 123 456</div>
+  </a>
+</div>
+
+<script src="js/data.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
